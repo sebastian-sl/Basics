@@ -4,13 +4,13 @@ This repository will serve as a Cheat Sheet or Storage of Basic Code for my most
 
 The repository will be divided by topics and will probably contain the nine following folders:
 
-* Basics: Classes, Datatypes and Basic Methods
-* Data Science: Pandas, Numpy, Visualisation and Sklearn
-* Databases
-* CLI
-* File Management: CSV, txt, Excel
-* Requests: Webscraping
-* GIT
-* Frontend: HTML, CSS + Frameworks, Javascript + Frameworks
-* Backend: Django, Flask, Spring, Express
-* Others
+* **Basics:** Classes, Datatypes and Basic Methods
+* **Data Science:** Pandas, Numpy, Visualisation and Sklearn
+* **Databases**
+* **CLI**
+* **File Management:** CSV, txt, Excel
+* **Requests:** Webscraping
+* **GIT**
+* **Frontend:** HTML, CSS + Frameworks, Javascript + Frameworks
+* **Backend:** Django, Flask, Spring, Express
+* **Others**
