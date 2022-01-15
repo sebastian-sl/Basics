@@ -19,4 +19,4 @@ The repository will be divided by topics and will probably contain the nine foll
 
 &nbsp;
 
-*This repository probably won't be perfect, since i'm not an expert but i will try to maintain best practices and modern code*
+*This repository won't be perfect, since i'm not an expert but i will try to maintain best practices and modern code*
