@@ -14,3 +14,6 @@ The repository will be divided by topics and will probably contain the nine foll
 * **Frontend:** HTML, CSS + Frameworks, Javascript + Frameworks
 * **Backend:** Django, Flask, Spring, Express
 * **Others**
+
+
+* This repository probably won't be perfect, since i'm not an expert but i will try to maintain best practices and modern code *
