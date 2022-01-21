@@ -12,13 +12,13 @@ myArray.insert(1, "Lola")							# Insert into specific position (here: 1)
 myArray.append("Peter")								# Append to the end of the array
 
 # READ
-print(myArray)										# Prints complete Array
-print(myArray[2])									# Prints the Element with Index
+print(myArray)							# Prints complete Array
+print(myArray[2])						# Prints the Element with Index
 
 # UPDATE
 myArray[0] = "Zoe"									# Updates Element by Index
 myArray2 = list(map(lambda n: n + n, myArray2))		# Maps Function to all Elements
-myArray3 = myArray + myArray2						# Joins two Arrays
+myArray3 = myArray + myArray2								# Joins two Arrays
 
 
 # ITERATE
