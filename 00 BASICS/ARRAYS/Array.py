@@ -1,8 +1,5 @@
 # PYTHON ARRAYS
 
-# DECLARATION
-myArray: list; myArray2: list; myArray3: list
-
 # INITIALIZATION
 myArray = ["Tim", "Julia", "Hans"]
 myArray2 = [5, 8, 2]

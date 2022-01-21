@@ -1,8 +1,5 @@
 // JAVASCRIPT ARRAYS
 
-// DECLARATION
-let myArray, myArray2, myArray3;                // There is no real declaration in Js
-
 // INITIALIZATION
 myArray = ["Tim", "Julia", "Hans"];
 myArray2 = [5, 8, 2];
