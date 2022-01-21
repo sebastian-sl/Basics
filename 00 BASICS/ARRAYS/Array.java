@@ -2,23 +2,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-/* JAVA ARRAYS
-In Java there are multiple ways to write Arrays. I will start with the more
-accesible/useable way and then show the traditional Array. 
-*/
+// JAVA ARRAY
 
 public class Array {
     public static void main(String[] args) {
         
-        // DECLARATION
-        ArrayList<String> myArray;
-        ArrayList<Integer> myArray2;
-        ArrayList<Integer> myArray3;
-
         // INITIALIZATION
-        myArray = new ArrayList<>(Arrays.asList("Tim", "Julia", "Hans"));
-        myArray2 = new ArrayList<>(Arrays.asList(5, 8, 2));
-        myArray3 = new ArrayList<>(Arrays.asList(1, 2, 3));
+        ArrayList<String> myArray = new ArrayList<>(Arrays.asList("Tim", "Julia", "Hans"));
+        ArrayList<Integer>myArray2 = new ArrayList<>(Arrays.asList(5, 8, 2));
+        ArrayList<Integer> myArray3 = new ArrayList<>(Arrays.asList(1, 2, 3));
 
         // CREATE
         myArray.add(1, "Lola");                             // Insert into specific position
@@ -53,9 +45,6 @@ public class Array {
         /* NORMAL ARRAYS
         Normal Arrays have some minor advantages in some areas (ie. performance) but also have some 
         drawbacks which we will see in the following code with the same operations as above. */
-
-        // DECLARATION
-        String[] names;
 
         // INITIALIZATION (easier)
         String[] oldArr = {"Dieter", "Maier"};
