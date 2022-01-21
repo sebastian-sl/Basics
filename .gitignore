@@ -1,2 +1,6 @@
 # Ignoring files by extension
 *.class
+
+
+# mypy
+.mypy_cache/
