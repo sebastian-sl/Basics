@@ -12,13 +12,13 @@ myArray.insert(1, "Lola")							# Insert into specific position (here: 1)
 myArray.append("Peter")								# Append to the end of the array
 
 # READ
-print(myArray)							# Prints complete Array
-print(myArray[2])						# Prints the Element with Index
+print(myArray)								# Prints complete Array
+print(myArray[2])							# Prints the Element with Index
 
 # UPDATE
-myArray[0] = "Zoe"									# Updates Element by Index
-myArray2 = list(map(lambda n: n + n, myArray2))		# Maps Function to all Elements
-myArray3 = myArray + myArray2								# Joins two Arrays
+myArray[0] = "Zoe"								# Updates Element by Index
+myArray2 = list(map(lambda n: n + n, myArray2))			# Maps Function to all Elements
+myArray3 = myArray + myArray2							# Joins two Arrays
 
 
 # ITERATE
@@ -36,6 +36,6 @@ myArray.reverse()									# Reverses the order of the Array
 
 # DELETE
 myArray.pop()										# Removes last Element
-myArray.remove("Julia")								# Remove Element by Value
+myArray.remove("Julia")									# Remove Element by Value
 del myArray[2]										# Remove Element by Index
 myArray.clear()										# Removes everything
