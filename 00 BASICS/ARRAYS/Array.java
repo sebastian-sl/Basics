@@ -2,14 +2,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-
 /* JAVA ARRAYS
-
 In Java there are multiple ways to write Arrays. I will start with the more
 accesible/useable way and then show the traditional Array. 
-
 */
-
 
 public class Array {
     public static void main(String[] args) {
@@ -34,10 +30,8 @@ public class Array {
 
         // UPDATE
         myArray.set(0, "Zoe");                              // Update Element by Index
-                                                            // No Map, probably by Iteration (unsure)
         myArray2.addAll(myArray3);                          // Joins two Arrays
         
-
         // ITERATION
         for (int i = 0; i < myArray.size(); i++) {          // Iterate by index
             System.out.println(myArray.get(i));
@@ -46,7 +40,6 @@ public class Array {
         for (String name: myArray) {                        // Iterate by Element
             System.out.println(name);
         }
-
 
         // SORT
         Collections.sort(myArray);                              // SORT ASC
@@ -57,13 +50,9 @@ public class Array {
         myArray.clear();
 
 
-
-
-        /*                  NORMAL ARRAYS
-        Normal Arrays have some minor advantages in some areas (ie. performance) but
-        also have some drawbacks which we will se in the following code which tries to
-        do the same operations as above. 
-        */
+        /* NORMAL ARRAYS
+        Normal Arrays have some minor advantages in some areas (ie. performance) but also have some 
+        drawbacks which we will see in the following code with the same operations as above. */
 
         // DECLARATION
         String[] names;
@@ -71,8 +60,7 @@ public class Array {
         // INITIALIZATION (easier)
         String[] oldArr = {"Dieter", "Maier"};
 
-        // CREATE
-                    // Impossible, Arrays have a fixed size so we can't add new Elements
+        // CREATE (Impossible to create new Elements because of fixed size)
 
         // READ
         System.out.println(oldArr[0]);                      // Prints Element by index
@@ -90,14 +78,11 @@ public class Array {
             System.out.println(name);
         }
 
-        // SORT
+        // SORT (Reversing probably not possible, only with Loop)
         Arrays.sort(oldArr);                                // SORT ASC
         Arrays.sort(oldArr, Collections.reverseOrder());    // SORT DESC
 
-                    // Reversing not possible, only with Loop
-
-        // DELETE
-                    // Impossible to delete single Elements because of the size        
-        oldArr = null;
+        // DELETE (impossible to delete single Elements cause of fixed size)
+        oldArr = null;                                      // Removes everything
     }
 }

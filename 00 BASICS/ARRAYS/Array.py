@@ -1,14 +1,11 @@
 # PYTHON ARRAYS
 
 # DECLARATION
-myArray: list
-myArray2: list
-myArray3: list
+myArray: list; myArray2: list; myArray3: list
 
 # INITIALIZATION
 myArray = ["Tim", "Julia", "Hans"]
 myArray2 = [5, 8, 2]
-myArray3 = []
 
 # CREATE
 myArray.insert(1, "Lola")							# Insert into specific position (here: 1)

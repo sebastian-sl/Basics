@@ -1,15 +1,11 @@
 // JAVASCRIPT ARRAYS
 
-
 // DECLARATION
-let myArray;                        // There is no real declaration in Js
-let myArray2;
-let myArray3;
+let myArray, myArray2, myArray3;                // There is no real declaration in Js
 
 // INITIALIZATION
 myArray = ["Tim", "Julia", "Hans"];
 myArray2 = [5, 8, 2];
-myArray3 = [];
 
 // CREATE
 myArray.push("Lola");                           // Append to the end of the Array
@@ -38,7 +34,6 @@ myArray.sort()                                  // SORT ASC
 myArray.sort().reverse()                        // SORT DESC
 
 myArray.reverse()                               // Reverses the order of the Array
-
 
 // DELETE
 myArray.pop()                       // Removes last Element
