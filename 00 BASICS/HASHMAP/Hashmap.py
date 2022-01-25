@@ -44,4 +44,4 @@ employee1.pop("age")						# removes Item by Key
 employee1.popitem()						# removes last item in the dictionary
 
 
-all_employee.clear()							# clears the whole dictionary
+all_employee.clear()						# clears the whole dictionary
