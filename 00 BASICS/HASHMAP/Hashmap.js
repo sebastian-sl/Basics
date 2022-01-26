@@ -37,7 +37,7 @@ for (let value of employee1.values()) {     // Iterate over the values only
     console.log(value);
 }
 
-for (let entry of employee1) {              // Iterates over the entries (as array!) of the map
+for (let entry of employee1) {              // Iterates over the key-value pairs (as array! 0 is key, 1 is value)
     console.log(entry);
     console.log(entry[0]);
 }
