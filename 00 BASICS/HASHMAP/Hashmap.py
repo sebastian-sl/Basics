@@ -26,13 +26,13 @@ print(employee1["name"])					# Prints the value of the given key
 employee1["name"] = "Dieter"					# Update ELement by key
 
 # ITERATE
-for key in employee1.keys():						# Iterate over the key only
+for key in employee1.keys():					# Iterate over the key only
 	print(key)
 
-for value in employee1.values():					# Iterate over the values only
+for value in employee1.values():				# Iterate over the values only
 	print(value)
 
-for key in employee1:								# Iterate over the entries
+for key in employee1:						# Iterate over the entries
 	print(key, employee1[key])
 
 for key, value in employee1.items():				# Iterate by Element for key & value, more convenient
