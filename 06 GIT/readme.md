@@ -4,8 +4,8 @@
 
 <pre>
 <b> git init </b>            Starts a repository from scratch in the current Directory  
-<b> git clone <url> </b>          Clones the repository from given url    
-<b> git fork <url> </b>           Clones the repository to your github (i.e repository from other sources)  
+<b> git clone URL </b>          Clones the repository from given url    
+<b> git fork URL </b>           Clones the repository to your github (i.e repository from other sources)  
 </pre>
 
 ### Modifying files in the repository
@@ -14,22 +14,22 @@
 <b> git status </b>         lists the current status of your repository, which files changed, which files were added already etc.  
 <b> git log </b>            lists all commits to the repository
 <br>
-<b> git add <file> </b>           adds the given file or all (*) to the staging area  
-<b> git reset <file> </b>         removes the modified files or all () from the staging area  
+<b> git add FILLE/* </b>           adds the given file or all (*) to the staging area  
+<b> git reset </b>         removes the modified files or all () from the staging area  
 <br>
-<b> git commit -m <msg> </b>     adds all files from the staging area to the repository  
+<b> git commit -m MSG </b>     adds all files from the staging area to the repository  
 <b> git reset HEAD~ </b>    will remove the latest commit or HEAD{n} the last n-th commits
-<b> git reset --hard <hash> </b>  will reset the repository to the state before the given hash from git log  
+<b> git reset --hard HASH </b>  will reset the repository to the state before the given hash from git log  
 </pre>
   
 ### Creating a new Branch
 
 <pre>
-<b> git checkout <name> </b>      creates a new branch including switching to the branch  
-<b> git branch <name> </b>        creates a new branch without switching  
-<b> git switch <name> </b>        switches to the branch 
-<b> git branch -d <name> </b>     deletes the branch under given name  
-<b> git merge <name> </b>         merges the given name to the current working branch  
+<b> git checkout -b NAME </b>      creates a new branch including switching to the branch  
+<b> git branch NAME </b>        creates a new branch without switching  
+<b> git switch NAME </b>        switches to the branch 
+<b> git branch -d NAME </b>     deletes the branch under given name  
+<b> git merge NAME </b>         merges the given name to the current working branch  
 </pre>
 
 ### Connecting and Modifying to Github
