@@ -2,17 +2,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-
-/*  
-Java is way more strict with hashmaps compared to Python/Javascript. A Hashmap in Java con 
-only hold key-value pairs with the every key being the same dataype as all the other keys, 
-the same goes for the values. Will discuss two possible alternatives at the bottom.
+/*  Java is way more strict with hashmaps compared to Python/Javascript. A Hashmap in Java con only hold key-value pairs with the 
+every key being the same dataype as all other keys, same goes for the values. Will discuss two possible alternatives at the bottom.
 */
 
 public class Hashmap {
     public static void main(String[] args) {
-
-
         // DECLARATION
         HashMap<String, String> user = new HashMap<>();
 
