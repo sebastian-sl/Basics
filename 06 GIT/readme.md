@@ -38,7 +38,7 @@
 <b> git remote add origin <url> </b>  creates a connection to given url (github)  
 <b> git pull </b>                will fetch and merge any changes from the connected url to the local repository  
 <b> git push </b>                uploads the local repository to the connected repository 
-<b> git pull request <url> </b>       after pushing, you create a request to an external repository owner to accept changes    
+<b> git pull request <url> </b>       after pushing, you create a request to an ext. repository owner to accept changes    
 
 </pre>
 
