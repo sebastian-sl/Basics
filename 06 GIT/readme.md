@@ -14,7 +14,7 @@
 <b> git status </b>         lists the current status of your repository, which files changed, which files were added already etc.  
 <b> git log </b>            lists all commits to the repository
 <br>
-<b> git add FILLE/* </b>           adds the given file or all (*) to the staging area  
+<b> git add FILE/* </b>           adds the given file or all (*) to the staging area  
 <b> git reset </b>         removes the modified files or all () from the staging area  
 <br>
 <b> git commit -m MSG </b>     adds all files from the staging area to the repository  
