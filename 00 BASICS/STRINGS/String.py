@@ -6,13 +6,13 @@ mystring = "Hello World"
 mystring1 = "Ok lets start!"
 
 # READ
-print(mystring)                         # prints the whole String
+print(mystring)                             # prints the whole String
 
-x = mystring[2]                         # gets only the 2nd character of the string (remember index starts at 0)
-x = mystring[:2]                        # gets everything (:) until the 2nd index
-x = mystring[2:]                        # gets everything from the 2nd index to the end (:)
-x = mystring[3:5]                       # gets everything from 3rd to 5th index (5th included)
-x = mystring[-5:-2]                     # same rules apply but backwards, everything from 5th last to 2nd last
+x = mystring[2]                             # gets only the 2nd character of the string (remember index starts at 0)
+x = mystring[:2]                            # gets everything (:) until the 2nd index
+x = mystring[2:]                            # gets everything from the 2nd index to the end (:)
+x = mystring[3:5]                           # gets everything from 3rd to 5th index (5th included)
+x = mystring[-5:-2]                         # same rules apply but backwards, everything from 5th last to 2nd last
 
 # UPDATE (Strings are immutable, so we need to create a new object)
 mystring1 = mystring1.replace("k", "kay")   # replaces first with second argument
