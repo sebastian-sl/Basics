@@ -7,7 +7,7 @@ let mystring1 = "ok lets start!"
 // READ
 console.log(mystring)
 
-x = mystring.substring(1,2)                         // gets the 2nd index. Slice(start, end)
+x = mystring.substring(1,2)                         // gets the 2nd index. substring(start, end)
 x = mystring.substring(0, 2)                        // gets everything until the 2nd index
 x = mystring.substring(2)                           // gets everything from the 2nd index to end -> same as substring(2, )
 x = mystring.substring(3, 5)                        // gets everything from 3rd to 5th index (5th not included!)
