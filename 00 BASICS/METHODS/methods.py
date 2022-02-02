@@ -1,11 +1,11 @@
 # Methods
+
 mystring = "teststring"
 myint = 5
 myarray = [5, 6, 7]
 
-
-# Usage of functions
-def myfunction1():                       # Basic function, can be executed with myfunction(). Returns the value, so it can be passed!
+# FUNCTIONS
+def myfunction1():                       # Basic function, can be executed with myfunction1(). Returns the value, so it can be passed!
     return "Hello World"
 
 def myfunction2(number=1):             # with argument an argument, equals means default value if no argument given
