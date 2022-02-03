@@ -1,4 +1,4 @@
 ## Basics
-In this Basics we will discuss datatypes and some basic methods of every programming language. I won't go into detail about every 
-datatype since that would be too much. I will leave out some of the easier datatypes (like int, float, booleans) aswell as not 
-really frequently used ones (like bytes, sets - at least i barely use them).
+In this Basics section, i will showcase some of the more basic things like Classes, Datatypes and built-in methods. I won't go into detail
+about everything since that would be too much. For example i will leave out some easier datatypes (like int, float, bool) as well as not
+really frequently used datatypes (bytes, sets - at least i barely use them).
