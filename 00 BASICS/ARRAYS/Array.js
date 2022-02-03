@@ -14,7 +14,7 @@ console.log(myArray[1])                         // Prints the Element with Index
 
 // UPDATE
 myArray[0] = "Zoe"                              // Updates Element by Index
-myArray2 = myArray2.map((e) => e+e)    // Maps function to all Elements with Arrow
+myArray2 = myArray2.map((e) => e+e)             // Maps function to all Elements with Arrow (forEach works aswell but doesn't create new array)
 myArray3 = myArray.concat(myArray2)             // Joins two Arrays
 
 // ITERATE
