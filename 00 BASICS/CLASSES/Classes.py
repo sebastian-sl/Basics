@@ -45,6 +45,6 @@ class HR_Employee(Employee):                        # Without init, subclass inh
 
     department = department.HR                      # class attr for subclass with Enum
 
-obj1 = HR_Employee("Zoe", "Miller", "Hiring")   # creating SUBCLASS INSTANCE
-print(obj1.department)                          # SUBCLASS attr
-obj1.intro()                                    # PARENTS INSTANCE method
+obj1 = HR_Employee("Zoe", "Miller", "Hiring")       # creating SUBCLASS INSTANCE
+print(obj1.department)                              # SUBCLASS attr
+obj1.intro()                                        # PARENTS INSTANCE method
