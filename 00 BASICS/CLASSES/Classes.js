@@ -9,7 +9,6 @@ class Employee {
         console.log("Hello, i am " + this.fname + " " + this.lname)
     }
 }
-
 let obj = new Employee("Peter", "Mayer")    // creating INSTANCE
 console.log(obj.fname)                      // INSTANCE attr
 obj.intro()                                 // INSTANCE method
@@ -23,7 +22,6 @@ class Engineer {
         console.log(this.company)
     }
 }
-
 console.log(Engineer.company)          // CLASS attr
 Engineer.intro()                       // CLASS method
 
@@ -45,7 +43,6 @@ class HREmployee extends Employee {
 
     department = department.HR;
 }
-
 let obj1 = new HREmployee("Zoe", "Miller", "Hiring")    // creating SUBCLASS INSTANCE
 console.log(obj1.department)                            // SUBCLASS attr
 obj1.intro()                                            // PARENTS INSTANCE method
