@@ -37,7 +37,7 @@ class department(Enum):                    # set of symbolic names bound to unqi
     MARKETING = 3
 
 
-# INHHERITANCE examples
+# INHHERITANCE example
 class HR_Employee(Employee):                        # Without init, subclass inherits the init from parents! Super() 'manually'
     def __init__(self, fname, lname, division):     # inherits for given arguments. We do this to add another attr!
         super().__init__(fname, lname)
@@ -45,6 +45,6 @@ class HR_Employee(Employee):                        # Without init, subclass inh
 
     department = department.HR                      # class attr for subclass with Enum
 
-obj1 = HR_Employee("Zoe", "Miller", "Hiring")   # creating SUBCLASS INSTANCE
-print(obj1.department)                          # SUBCLASS attr
-obj1.intro()                                    # PARENTS INSTANCE method
+obj1 = HR_Employee("Zoe", "Miller", "Hiring")       # creating SUBCLASS INSTANCE
+print(obj1.department)                              # SUBCLASS attr
+obj1.intro()                                        # PARENTS INSTANCE method
