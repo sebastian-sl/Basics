@@ -1,5 +1,6 @@
 # Ignoring files by extension
 *.class
+*.java
 
 
 # mypy
