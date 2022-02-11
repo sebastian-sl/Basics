@@ -8,7 +8,7 @@ The repository will be divided by topics and will probably contain the nine foll
 
 * **[00 Basics:](https://github.com/sebastian-sl/Basics/tree/main/00%20BASICS)** Classes, Datatypes and Basic Methods
 * **01 Data Science:** Pandas, Numpy, Visualisation and Sklearn
-* **02 Databases:** Connection, CRUD (MySQL, Postgres, MSSQL, eventually noSQL)
+* **[02 Databases:](https://github.com/sebastian-sl/Basics/tree/main/02%20DATABASES)** Connection, CRUD (MySQL, Postgres, MSSQL, eventually noSQL)
 * **03 CLI** command-line
 * **04 File Management:** CSV, txt, Excel
 * **05 Requests:** API Calls, Webscraping, Automation
