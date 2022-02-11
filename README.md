@@ -15,7 +15,7 @@ The repository will be divided by topics and will probably contain the nine foll
 * **[06 GIT](https://github.com/sebastian-sl/Basics/tree/main/06%20GIT)**
 * **07 Frontend:** HTML, CSS + Frameworks, Javascript + Frameworks
 * **08 Backend:** Django, Flask, Spring, Express
-* **09 Others**  
+* **[09 Others](https://github.com/sebastian-sl/Basics/tree/main/09%20OTHERS)**  Python Venv
 
 &nbsp;
 
