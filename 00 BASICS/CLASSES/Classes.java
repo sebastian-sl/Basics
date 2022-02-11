@@ -1,0 +1,66 @@
+// INSTANCE example (can only be accessed with an instance/object)
+class Employee {
+    String fname, lname;                                // INSTANCE attr declaration
+
+
+    Employee(String fname, String lname) {              // INSTANCE attr
+        this.fname = fname;
+        this.lname = lname;
+    }
+
+    void intro() {                                      // INSTANCE method
+        System.out.println("Hello, i am " + this.fname + " " + this.lname);
+    }
+}
+
+
+// CLASS example (can be accessed by class without instance)
+class Engineer {
+    static String company = "testcompany";              // CLASS attr
+
+    static void intro() {                               // CLASS method
+        System.out.println("Hello, i work for " + company);
+    }
+
+    static void give_raise(Integer salary) {            // STATIC method
+        System.out.println("NO!");
+    }
+}
+
+
+// ENUM
+enum Department {                                               // set of symbolic names bound to unqiue/constant values
+    HR, FINANCE, MARKETING
+}
+
+// INHERITANCE
+class HREmployee extends Employee {
+    Department department = Department.HR;                      // CLASS attr from ENUM
+    String division;
+
+    HREmployee(String fname, String lname, String division) {  // SUBCLASS inherits attr from parent
+        super(fname, lname);                                   // and adds new attr (division)
+        this.division = division;
+    }
+
+}
+
+// ACCESSING
+public class Classes {
+    public static void main(String[] args) {
+
+        // INSTANCE
+        Employee employee = new Employee("Peter", "Mayer");         // creating INSTANCE
+        System.out.println(employee.fname);                         // getting INSTANCE attr
+        employee.intro();                                           // calling INSTANCE method
+
+        // CLASS
+        System.out.println(Engineer.company);                       // getting CLASS attr
+        Engineer.intro();                                           // calling CLASS method
+
+        // INHERITANCE
+        HREmployee hr = new HREmployee("Zoe", "Miller", "Hiring");  // creating INSTANCE SUBCLASS
+        System.out.println(hr.department);                          // calling SUBCLASS attr (ENUM)
+        hr.intro();                                                 // calling INHERITED method
+    }
+}

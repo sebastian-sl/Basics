@@ -30,31 +30,18 @@ con_ac = (
     r"DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};"
     r"DBQ=C:\test.accdb;")
 
-# Continuing with MySQL for Basic operations (nearly all rdbms work the same from here on with cursor.execute(SQL Instructions))
+# Creating cursor (for mysql, nearly all rdbms work similiar from here on)
 cursor = con_mysql.cursor()
 
-# Creating DB
-cursor.execute("CREATE DATABASE IF NOT EXISTS mydatabase")
-cursor.execute("USE mydatabase")
-
-# Creating Table
-cursor.execute("""CREATE TABLE IF NOT EXISTS customers
-                (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), age INT)""")
-
-# Insert Data
-cursor.execute("""INSERT INTO customers
-                (name, age)
-                VALUES (%s, %s)""", ("Peter", 36))       # Inserts a single value (%s to escape direct input!)
+# Execute Queries
+cursor.execute("USE db")                                                # executes a single SQL query
 
 val = [
-    ("Dieter", 44),
-    ("Julia", 27)
+    ("Test", "Person")
 ]
 
-cursor.executemany("""INSERT INTO customers
-                (id, name, age)
-                VALUES (0, %s, %s)""", val)                # Inserts a multiple records (see executemany!)
-
+cursor.executemany(""" INSERT INTO users (first_name, last_name)
+                       VALUES (%s, %s)""", val)                        # executes multiple query (%s to escape direct input!)
 
 # Read data
 cursor.execute("SELECT * FROM customers")               # gets first record from cursor (reset necessary cause fetchall)
