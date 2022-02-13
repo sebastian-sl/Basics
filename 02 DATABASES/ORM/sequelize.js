@@ -2,15 +2,15 @@
 const {Sequelize} = require("sequelize");
 const sequelize = new Sequelize(
     "postgres://user:password@localhost:5433/mytest",
-    {logging: false})
+    {logging: false})                                                               // otherwise every query will be logged (and probably not executed)
 const User = sequelize.define('test',
                                 {
                                 id: {type: Sequelize.INTEGER, primaryKey: true},
                                 name: {type: Sequelize.STRING}},
                                 {
-                                    tableName: "test",
-                                    timestamps: false
-                                })
+                                    tableName: "test",  
+                                    timestamps: false                               // otherwise findall will look for the columns 'createdAt' and 'updatedAt'
+                                })  
 
 // auth/start connection
 sequelize.authenticate();
@@ -29,7 +29,7 @@ User.findOne({
     raw: true,
     where: {name: "Julia"}})    // where to filter
 .then((e) => {
-    console.log(e.id)              // returns one object only
+    console.log(e.id)           // returns one object only
     sequelize.close()
 })
 
