@@ -1,16 +1,25 @@
 // npm install sequelize
 const {Sequelize} = require("sequelize");
-const sequelize = new Sequelize(
-    "postgres://user:password@localhost:5433/mytest",
-    {logging: false})                                                               // otherwise every query will be logged (and probably not executed)
-const User = sequelize.define('test',
-                                {
+
+const sequelize = new Sequelize({
+    host: "localhost",
+    port: 5433,
+    dialect: "postgres",
+    username: "postgres",
+    password: "postgres",
+    database: "mytest",
+    logging: false
+})                                                          // otherwise every query will be logged (and probably not executed)
+})                                                           
+
+const User = sequelize.define('test',{
                                 id: {type: Sequelize.INTEGER, primaryKey: true},
                                 name: {type: Sequelize.STRING}},
                                 {
                                     tableName: "test",  
                                     timestamps: false                               // otherwise findall will look for the columns 'createdAt' and 'updatedAt'
-                                })  
+                                }
+)  
 
 // auth/start connection
 sequelize.authenticate();
