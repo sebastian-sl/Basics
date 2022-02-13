@@ -8,9 +8,8 @@ const sequelize = new Sequelize({
     username: "postgres",
     password: "postgres",
     database: "mytest",
-    logging: false
-})                                                          // otherwise every query will be logged (and probably not executed)
-})                                                           
+    logging: false                                                                  // otherwise every query will be logged (and probably not executed)
+})                                                                                                               
 
 const User = sequelize.define('test',{
                                 id: {type: Sequelize.INTEGER, primaryKey: true},
