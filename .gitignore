@@ -1,5 +1,5 @@
-# Ignoring files by extension
+# IGNORE FILES
 *.class
 
-# mypy
+# IGNORE FOLDERS
 .mypy_cache/
