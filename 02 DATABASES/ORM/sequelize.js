@@ -6,19 +6,19 @@ const sequelize = new Sequelize({
     port: 5433,
     dialect: "postgres",
     username: "postgres",
-    password: "postgres",
+    password: "runaller",
     database: "mytest",
     logging: false                                                                  // otherwise every query will be logged (and probably not executed)
-})                                                                                                               
+})
 
 const User = sequelize.define('test',{
                                 id: {type: Sequelize.INTEGER, primaryKey: true},
                                 name: {type: Sequelize.STRING}},
                                 {
-                                    tableName: "test",  
+                                    tableName: "test",
                                     timestamps: false                               // otherwise findall will look for the columns 'createdAt' and 'updatedAt'
                                 }
-)  
+)
 
 // auth/start connection
 sequelize.authenticate();
@@ -50,6 +50,11 @@ User.update({ name: "Zoe" }, {
 
 // CREATE
 const jane = User.create({
-    id: 4,
+    id: 5,
     name: "Jane"
+})
+
+// DELETE
+User.destroy({
+    where: {id: 2}
 })
