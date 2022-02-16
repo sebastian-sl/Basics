@@ -2,44 +2,39 @@ Since the syntax for the windows commandline instruction sare always the same, i
 
 
 #### Windows Commands
-
 <pre>
 <b> echo TXT </b>           
 <b> ipconfig </b>           
 <b> systeminfo</b>
 <b> dir </b>                
-<b> ping TARGET </b>        -t AMOUNT, > textfile.txt
-<b> shutdown </b>           -s: local machine, -t: timer, -r: restart, -l:log off, -a: cancel
-<b> tasklist</b>            '/fi "MEMUSAGE gt 100000"; '/fi "IMAGENAME eq chrome.exe"' (QUOTES!)
-<b> taskkill</b>            '/IM spotify.exe /f'
+<b> ping TARGET </b>                                            -t AMOUNT, > textfile.txt
+<b> shutdown </b>                                               -s: local machine, -t: timer, -r: restart, -l:log off, -a: cancel
+<b> tasklist</b>                                                '/fi "MEMUSAGE gt 100000"; '/fi "IMAGENAME eq chrome.exe"' (QUOTES!)
+<b> taskkill</b>                                                '/IM spotify.exe /f'
 </pre>
 
 #### Python
-
 <pre>
 <b> import subprocess </b>
-<b> subprocess.run("ipconfig") </b>                         runs given command and prints output
-<b> subprocess.run("dir", shell = True </b>                 shell = True necessary for some commands
-<b> subprocess.check_output("ipconfig", errors="ignore")    returns cmd output as string, ignore errors to get correct lines
+<b> subprocess.run("ipconfig") </b>                             runs given command and prints output
+<b> subprocess.run("dir", shell = True </b>                     shell = True necessary for some commands
+<b> subprocess.check_output("ipconfig", errors="ignore")</b>    returns cmd output as string, ignore errors to get correct lines
 
 
 -> use regex to catch output
 </pre>
 
-
 #### JavaScript
-
-<pre>
+<pre><b>
 var process = require("child_process");
 
 process.exec("ipconfig", (err, stdout, stderr) => {
     console.log(stdout)
 })
-</pre>
+</b></pre>
 
 #### Java
-
-<pre>
+<pre><b>
 Process process = Runtime.getRuntime().exec("ipconfig");
 BufferedReader output = new BufferedReader(new InputStreamReader(process.getInputStream()));
 
@@ -51,4 +46,4 @@ output.close()
 
 -> needs try / catch expection
 
-</pre>
+</b></pre>
