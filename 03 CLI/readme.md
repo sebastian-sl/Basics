@@ -7,7 +7,7 @@ Since the syntax for the windows commandline instruction sare always the same, i
 <b> ipconfig </b>           
 <b> systeminfo</b>
 <b> dir </b>                
-<b> ping TARGET </b>                                            -t AMOUNT, > textfile.txt
+<b> ping TARGET </b>                                            -n AMOUNT, > textfile.txt
 <b> shutdown </b>                                               -s: local machine, -t: timer, -r: restart, -l:log off, -a: cancel
 <b> tasklist</b>                                                '/fi "MEMUSAGE gt 100000"; '/fi "IMAGENAME eq chrome.exe"' (QUOTES!)
 <b> taskkill</b>                                                '/IM spotify.exe /f'
