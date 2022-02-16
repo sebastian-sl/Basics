@@ -25,8 +25,8 @@ Since the syntax for the windows commandline instruction sare always the same, i
 </pre>
 
 #### JavaScript
-<pre><b>
-var process = require("child_process");
+<pre>
+<b>var process = require("child_process");
 
 process.exec("ipconfig", (err, stdout, stderr) => {
     console.log(stdout)
@@ -34,8 +34,8 @@ process.exec("ipconfig", (err, stdout, stderr) => {
 </b></pre>
 
 #### Java
-<pre><b>
-Process process = Runtime.getRuntime().exec("ipconfig");
+<pre>
+<b>Process process = Runtime.getRuntime().exec("ipconfig");
 BufferedReader output = new BufferedReader(new InputStreamReader(process.getInputStream()));
 
 while (output.readLine() != null) {
@@ -43,7 +43,5 @@ while (output.readLine() != null) {
 }
 output.close()
 
-
--> needs try / catch expection
-
-</b></pre>
+</b>-> needs try / catch expection
+</pre>
