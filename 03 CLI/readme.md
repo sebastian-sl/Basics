@@ -1,34 +1,54 @@
-## Basic Windows CLI
-Will only show some basic windows commands, because for the most of it there are better third party libraries/packages that can do the tasks better and/or easier.
-Therefor i will only show basic commands and a short way to execute them into the given languages.
+Since the syntax for the windows commandline instruction sare always the same, i will only show some basic windows command instructions and then show how to execute them with Python, Java and Javascript.
+
 
 #### Windows Commands
-* echo              
-* ipconfig          
-* dir               
-* ping TARGET       -t AMOUNT, > outputfile.txt
-* shutdown          -s: local machine, -t: timer, -r: restart, -l: log off user, -a:cancel shutdown
-* systeminfo        
-* tasklist          '/fi "MEMUSAGE gt 100000" (> 100mb)', '/fi "IMAGENAME eq chrome.exe" (taskname)'     (QUOTES!)
-* taskkill          '/IM spotify.exe /f' 
 
+<pre>
+<b> echo TXT </b>           
+<b> ipconfig </b>           
+<b> systeminfo</b>
+<b> dir </b>                
+<b> ping TARGET </b>        -t AMOUNT, > textfile.txt
+<b> shutdown </b>           -s: local machine, -t: timer, -r: restart, -l:log off, -a: cancel
+<b> tasklist</b>            '/fi "MEMUSAGE gt 100000"; '/fi "IMAGENAME eq chrome.exe"' (QUOTES!)
+<b> taskkill</b>            '/IM spotify.exe /f'
+</pre>
 
 #### Python
-import subprocess
 
-subprocess.run("ipconfig")                              runs given command and prints output
-subprocess.run("dir", shell=True)                       shell=True necessary for some commands
-subprocess.check_output("ipconfig", errors="ignore")    returns the cmd output as string, errors=ignore to get correct lines
+<pre>
+<b> import subprocess </b>
+<b> subprocess.run("ipconfig") </b>                         runs given command and prints output
+<b> subprocess.run("dir", shell = True </b>                 shell = True necessary for some commands
+<b> subprocess.check_output("ipconfig", errors="ignore")    returns cmd output as string, ignore errors to get correct lines
 
--> use regex to catch output if necessary
+
+-> use regex to catch output
+</pre>
+
+
+#### JavaScript
+
+<pre>
+var process = require("child_process");
+
+process.exec("ipconfig", (err, stdout, stderr) => {
+    console.log(stdout)
+})
+</pre>
 
 #### Java
+
+<pre>
 Process process = Runtime.getRuntime().exec("ipconfig");
 BufferedReader output = new BufferedReader(new InputStreamReader(process.getInputStream()));
-String outputLine;
 
-while ((outputLine = output.readLine()) != null) {
-  System.out.println(outputLine);
- }
- 
- output.close()
+while (output.readLine() != null) {
+        System.out.println(output.readLine);
+}
+output.close()
+
+
+-> needs try / catch expection
+
+</pre>
