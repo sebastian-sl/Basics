@@ -1,7 +1,5 @@
-/* 	In Javascript there are multiple ways to create a hashmap/dictionary
-	like the standard Object notation but since ES6 we can use the Map
-	object which i will use in the following code.
-	(Source: Mozilla Developer Network) */
+/* 	In Javascript there are multiple ways to create a hashmap/dictionary like the standard Object notation but since 
+	ES6 we can use the Map object which i will use in the following code. (Source: Mozilla Developer Network) */
 
 
 // INITIALIZATION (note the array of key-value pairs)
@@ -28,7 +26,7 @@ console.log(employee1.get("name"))          // print the value of given key
 // UPDATE
 employee1.set("name", "Dieter")             // Update value by key (if key doesnt' exist, will be created)
 
-// ITERATE (many ways to iterate)
+// ITERATE
 for (let key of employee1.keys()) {         // Iterate over the key only
     console.log(key);
 }
