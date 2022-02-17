@@ -1,4 +1,4 @@
-Since the syntax for the windows commandline instruction sare always the same, i will only show some basic windows command instructions and then show how to execute them with Python, Java and Javascript.
+Since the syntax for the windows commandline instructions are always the same, i will only show some basic windows command instructions and then show how to execute them with Python, Java and Javascript.
 
 
 #### Windows Commands
