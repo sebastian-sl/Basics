@@ -8,38 +8,30 @@ import java.util.List;
 public class App {
     public static void main(String[] args) {
         // Using provide configuration in resources
-        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+        SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
 
         // Opening Connection
         Session session = sessionFactory.openSession();
         session.beginTransaction();
 
-        // Getting all Records (query)
+        // Getting all Records (create query and get Results)
         String queryText = "from User";
-        Query query = session.createQuery(queryText, User.class);
-        List<User> users = query.list();
+        List<User> users = session.createQuery(queryText, User.class).getResultList();
+        System.out.println(users);
 
-        System.out.println("All users in List: " + users);
-
-        // Getting one user by Id (get)
+        // Getting one user by Id (get and getTransaction)
         User user = session.get(User.class, 1L);
         session.getTransaction();
         System.out.println("User with given Id: " + user);
 
-        // Getting one user by non-Id (query)
+        // Getting one user by non-Id (create query, set Parameter and get Result)
         queryText = "from User WHERE first_name = :VALUE";
-        query = session.createQuery(queryText, User.class);
-        query.setParameter("VALUE", "Ben");
-
-        User Ben = (User) query.getSingleResult();
+        User Ben = session.createQuery(queryText, User.class).setParameter("VALUE", "Ben").getSingleResult();
         System.out.println("User with name 'Ben': " + Ben);
 
-        // Getting one user with multiple entries by non-Id (query)
+        // Getting one user with multiple entries by non-Id (create Query, set Parameter and get Results)
         queryText = "from User WHERE last_name = :VALUE";
-        query = session.createQuery(queryText, User.class);
-        query.setParameter("VALUE", "Miller");
-
-        List <User> Millers = query.list();
+        List <User> Millers = session.createQuery(queryText, User.class).setParameter("VALUE", "Miller").getResultList();
         System.out.println("All Users called 'Miller': " + Millers);
 
         // Updating one user
@@ -47,6 +39,7 @@ public class App {
         user.setLast_name("Biden");
 
         session.update(user);
+        System.out.println(user);
 
         // Create Record
         User newUser = new User(6L, "Hans", "Landa");
