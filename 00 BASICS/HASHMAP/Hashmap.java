@@ -15,12 +15,11 @@ public class Hashmap {
         HashMap<Integer, String> employees = new HashMap<>(Map.of(
             1, "Peter",
             2, "Julia",
-            3, "Monika",
-            4, "Hans"
+            3, "Monika"
         ));
 
         // CREATE
-        employees.put(5, "Maria");
+        employees.put(4, "Maria");
 
         // READ
         System.out.println(employees);              // Prints the whole Hashmap
@@ -30,11 +29,11 @@ public class Hashmap {
         employees.put(4, "Tim");                    // Update Value by Key (created if it doesn't exist)
 
         // ITERATE
-        for (Integer key: employees.keySet()) {     // Iterates over the keys only (can access values)
+        for (Integer key: employees.keySet()) {     // Iterates over the keys only (can access values aswell)
             System.out.println(key + ", " + employees.get(key));
         }
 
-        for (String value: employees.values()) {    // Iteraves over the values only
+        for (String value: employees.values()) {    // Iterates over the values only
             System.out.println(value);
         }
 
@@ -43,12 +42,11 @@ public class Hashmap {
         employees.clear();                          // Removes all Entries
 
 
-        /* ALTERNATIVES:
-        1)  Using Type Object, but this creates a rat tail since you can only access the values 
-        as Type Objects. For example: If we want to add values from the Hashmap to an Array, the 
-        Array would need to be ArrayList<Object> or isinstance-checked before.
+        /* Alternatives for different Datatypes:
+        1)  Using Type Object, but this creates a rat tail since you can only access the values as Type of Objects.
+            So i we want to continue working with the values, we would have to continue with Object type (i.e. List<Object>)
 
-        2)  Using a class instead which is another topic.
+        2)  Using a class instead 
         */
     }
 }
