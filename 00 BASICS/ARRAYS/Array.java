@@ -1,3 +1,5 @@
+// In java there are multiple ways of creating an Array or List. I will only focus on the way i see mostly used. Maybe gonna add 
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -8,9 +10,15 @@ public class Array {
     public static void main(String[] args) {
         
         // INITIALIZATION
-        ArrayList<String> myArray = new ArrayList<>(Arrays.asList("Tim", "Julia", "Hans"));
-        ArrayList<Integer>myArray2 = new ArrayList<>(Arrays.asList(5, 8, 2));
-        ArrayList<Integer> myArray3 = new ArrayList<>(Arrays.asList(1, 2, 3));
+import java.util.*;
+
+public class Main { 
+  public static void main(String[] args) { 
+
+        // INITIALIZATION
+        List<String> myArray = new ArrayList<>(Arrays.asList("Tim", "Julia", "Hans"));
+        List<Integer>myArray2 = new ArrayList<>(Arrays.asList(5, 8, 2));
+        List<Integer> myArray3 = new ArrayList<>(Arrays.asList(1, 2, 3));
 
         // CREATE
         myArray.add(1, "Lola");                             // Insert into specific position
@@ -32,6 +40,8 @@ public class Array {
         for (String name: myArray) {                        // Iterate by Element
             System.out.println(name);
         }
+  } 
+}
 
         // SORT
         Collections.sort(myArray);                              // SORT ASC
@@ -44,9 +54,9 @@ public class Array {
 
         /* NORMAL ARRAYS
         Normal Arrays have some minor advantages in some areas (ie. performance) but also have some 
-        drawbacks which we will see in the following code with the same operations as above. */
+        drawbacks (fixed size and missing utility), which is why i will only show them in short. */
 
-        // INITIALIZATION (easier)
+        // INITIALIZATION
         String[] oldArr = {"Dieter", "Maier"};
 
         // CREATE (Impossible to create new Elements because of fixed size)
