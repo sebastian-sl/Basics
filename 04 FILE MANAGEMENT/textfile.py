@@ -24,14 +24,12 @@ for txt_file in os.listdir(dir_path):                                           
         # DELETE
         f.seek(0)
         output = f.read().splitlines()
-
         del output[2]                                                          # delete from array by index (with del) or by element (remove)
 
 
         # CREATE
         new_split = txt_file.split(".", 1)                                      # Splitting file name and extension to create new file names
         new_path = dir_path + "/" + new_split[0] + "_new." + new_split[1]
-
 
         with open(new_path, "w") as new:
             new.write("\n".join(output))                                        # \n to create new lines for each element of the array
