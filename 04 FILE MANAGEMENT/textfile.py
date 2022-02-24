@@ -3,7 +3,7 @@ import os
 dir_path = r"C:\Files\txt"
 
 
-for txt_file in os.listdir(dir_path):          # iterate over every file in the directory
+for txt_file in os.listdir(dir_path):                                            # iterate over every file in the directory
     file_path = dir_path + "/" + txt_file
 
     with open(file_path, mode="r+", encoding="utf8", errors="ignore") as f:      # r = read, w = write, a = append, + = update
