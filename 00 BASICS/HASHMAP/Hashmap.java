@@ -44,7 +44,7 @@ public class Hashmap {
 
         /* Alternatives for different Datatypes:
         1)  Using Type Object, but this creates a rat tail since you can only access the values as Type of Objects.
-            So i we want to continue working with the values, we would have to continue with Object type (i.e. List<Object>)
+            So if we want to continue working with the values, we would have to continue with Object type (i.e. List<Object>)
 
         2)  Using a class instead 
         */
