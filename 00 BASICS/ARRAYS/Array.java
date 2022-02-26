@@ -1,18 +1,10 @@
 // In java there are multiple ways of creating an Array or List. I will only focus on the way i see mostly used. Maybe gonna add 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
+import java.util.*;
 
 // JAVA ARRAY
 
 public class Array {
-    public static void main(String[] args) {
-        
-        // INITIALIZATION
-import java.util.*;
-
-public class Main { 
   public static void main(String[] args) { 
 
         // INITIALIZATION
