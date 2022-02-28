@@ -1,4 +1,3 @@
-// npm install fast-csv
 const folder = "C:\\"
 const fs = require("fs").promises;
 
