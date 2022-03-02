@@ -11,7 +11,7 @@ The repository will be divided by topics and will probably contain the nine foll
 * **[02 Databases:](https://github.com/sebastian-sl/Basics/tree/main/02%20DATABASES)** Connection Snippets, ORM with basic CRUD (DBs: MySQL, Postgres, MS-SQLConnection)
 * **[03 CLI](https://github.com/sebastian-sl/Basics/tree/main/03%20CLI)** Command-line instructions
 * **[04 File Management:](https://github.com/sebastian-sl/Basics/tree/main/04%20FILE%20MANAGEMENT)** Basic CRUD Operations for .txt/.csv
-* **[05 Requests:](https://github.com/sebastian-sl/Basics/tree/main/05%20REQUESTS)**Basic API calls and Web scraping
+* **[05 Requests:](https://github.com/sebastian-sl/Basics/tree/main/05%20REQUESTS)** Basic API calls and Webscraping
 * **[06 GIT](https://github.com/sebastian-sl/Basics/tree/main/06%20GIT)**
 * **07 Frontend:** HTML, CSS + Frameworks, Javascript + Frameworks
 * **08 Backend:** Django, Flask, Spring, Express
