@@ -13,7 +13,7 @@ console.log(employee1)                      // complete map
 console.log(employee1.get("name"))          // value by given key
 
 // CREATE
-employee1.set("gender", "m")		    // new key value pair (if key doesn't exist)
+employee1.set("gender", "m")		    // new key value pair (if key doesn't exist otherwise updated)
 
 // UPDATE
 employee1.set("name", "Dieter")
