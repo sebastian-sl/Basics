@@ -1,43 +1,32 @@
-# Python doesn't have the term hashmap but since a hashmap is a data structure that
-# creates key-value pairs, we can use the built-in dictionaries for the same purpose.
-
 # INITIALIZATION		
-employee1 = {							# Best Practice to indent the Code
+employee1 = {							
 	"id": 1,
 	"name": "Peter",
 	"age": 39
 }
 
-employee2 = {
-	"id": 2,
-	"name": "Peter",
-	"age": 27
-}
+# READ
+print(employee1)					# complete dictionary
+print(employee1["name"])				# value by given key
 
 # CREATE
-employee1["gender"] = "m"					# Create a new key value pair in a dictionary
-employee2["gender"] = "f"					# by using the dict[key] = value term
-
-# READ
-print(employee1)						# Prints the whole dictionary
-print(employee1["name"])					# Prints the value of the given key
+employee1["gender"] = "m"				# new key value pair (if key doesn't exist)
 
 # UPDATE
-employee1["name"] = "Dieter"					# Update ELement by key
+employee1["name"] = "Dieter"					
 
-# ITERATE
-for key in employee1.keys():					# Iterate over the key only
+# ITERATE over keys
+for key in employee1.keys():					
 	print(key)
 
-for value in employee1.values():				# Iterate over the values only
+# ITERATE over values
+for value in employee1.values():				
 	print(value)
 
-for key in employee1:						# Iterate over the entries
-	print(key, employee1[key])
-
-for key, value in employee1.items():				# Iterate by Element for key & value, more convenient
+# ITERATE over elements
+for key, value in employee1.items():			# Iterate by Element for key & value, more convenient
 	print(key, value)
 
 # DELETE
-employee1.pop("age")						# removes Item by Key
-employee2.clear()						# clears the whole dictionary
+employee1.pop("age")					# removes Item by Key
+employee2.clear()					# clears the whole dictionary
