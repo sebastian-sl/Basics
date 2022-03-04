@@ -1,5 +1,3 @@
-// JAVASCRIPT ARRAYS
-
 // INITIALIZATION
 myArray = ["Tim", "Julia", "Hans"];
 
