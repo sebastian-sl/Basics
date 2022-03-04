@@ -10,7 +10,7 @@ print(employee1)					# complete dictionary
 print(employee1["name"])				# value by given key
 
 # CREATE
-employee1["gender"] = "m"				# new key value pair (if key doesn't exist)
+employee1["gender"] = "m"				# new key value pair (if key doesn't exist otherwise updated)
 
 # UPDATE
 employee1["name"] = "Dieter"					
