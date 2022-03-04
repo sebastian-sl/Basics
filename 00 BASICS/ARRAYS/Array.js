@@ -2,7 +2,6 @@
 
 // INITIALIZATION
 myArray = ["Tim", "Julia", "Hans"];
-myArray2 = [5, 8, 2];
 
 // READ
 console.log(myArray);                           // complete Array
