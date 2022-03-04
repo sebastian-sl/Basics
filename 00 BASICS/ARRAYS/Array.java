@@ -15,7 +15,7 @@ public class Array {
             String[] myArray = {"Tim", "Tom", "Zoe"};
             List<String> myList = new ArrayList<>(Arrays.asList("Tim", "Tom", "Zoe"));
 
-            // READ ALL
+            // READ all
             System.out.println(Arrays.toString(myArray));
             System.out.println(myList);
 
