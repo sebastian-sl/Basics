@@ -1,15 +1,15 @@
 // BASIC FUNCTIONS
-function myfunction1() {                // myfunction1() to execute
+function myfunction1() {                        // myfunction1() to execute
     return "Hello World"
 }
 
 // FUNCTIONS WITH ARGUMENT
-function myfunction2(number=1) {       // equal means default value when none is given
+function myfunction2(number=1) {                // equal means default value when none is given
     return number * number
 }
 
 // FUNCTIONS WITH UNLIMITED ARGUMENTS
-function myfunction3(...numbers) {      // need to iterate over the arguments
+function myfunction3(...numbers) {              // need to iterate over the arguments
     for (let num of numbers) {
         console.log(num)
     }
@@ -21,4 +21,5 @@ function myfunction4({id, num}) {
 }
 
 // ARROW FUNCTIONS
-myarray1 = myarray.map((num) => num * num)  
+myarray = [5, 6, 7]
+myarray1 = myarray.map((num) => num * num)      // returns square numbers
