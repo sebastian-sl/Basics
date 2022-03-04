@@ -7,11 +7,11 @@ import java.util.*;
 public class Array {
   public static void main(String[] args) {
 
-            // INITIALIZE
+            // DECLARATION
             String[] exampleArray = new String[3];                  // need to give size
             List<String> exampleList = new ArrayList<>();
 
-            // DECLARATION
+            // INITIALIZE
             String[] myArray = {"Tim", "Tom", "Zoe"};
             List<String> myList = new ArrayList<>(Arrays.asList("Tim", "Tom", "Zoe"));
 
