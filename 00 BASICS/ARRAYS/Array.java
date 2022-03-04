@@ -1,79 +1,61 @@
-// In java there are multiple ways of creating an Array or List. I will only focus on the way i see mostly used. Maybe gonna add 
-
+/*  Since Java (in contrast to Python/JS) differentiates between lists and array, i will show both ways (Array first, then List).
+    The main differences between arrays are:
+            -> Arrays have fixed size and are therefor better performance wise
+            -> Lists are more flexible and have bit more utility                */
 import java.util.*;
 
-// JAVA ARRAY
-
 public class Array {
-  public static void main(String[] args) { 
+  public static void main(String[] args) {
 
-        // INITIALIZATION
-        List<String> myArray = new ArrayList<>(Arrays.asList("Tim", "Julia", "Hans"));
-        List<Integer>myArray2 = new ArrayList<>(Arrays.asList(5, 8, 2));
-        List<Integer> myArray3 = new ArrayList<>(Arrays.asList(1, 2, 3));
+            // INITIALIZE
+            String[] exampleArray = new String[3];                  // need to give size
+            List<String> exampleList = new ArrayList<>();
 
-        // CREATE
-        myArray.add(1, "Lola");                             // Insert into specific position
-        myArray.add("Peter");                               // Append to the end of the array
+            // DECLARATION
+            String[] myArray = {"Tim", "Tom", "Zoe"};
+            List<String> myList = new ArrayList<>(Arrays.asList("Tim", "Tom", "Zoe"));
 
-        // READ
-        System.out.println(myArray);                        // Prints complete Array
-        System.out.println(myArray.get(2));                 // Get Element by Index
+            // READ ALL
+            System.out.println(Arrays.toString(myArray));       // for whole array
+            System.out.println(myList);
 
-        // UPDATE
-        myArray.set(0, "Zoe");                              // Update Element by Index
-        myArray2.addAll(myArray3);                          // Joins two Arrays
-        
-        // ITERATION
-        for (int i = 0; i < myArray.size(); i++) {          // Iterate by index
-            System.out.println(myArray.get(i));
-        }
+            // READ element
+            System.out.println(myArray[0]);
+            System.out.println(myList.get(0));
 
-        for (String name: myArray) {                        // Iterate by Element
-            System.out.println(name);
-        }
-  } 
-}
+            // CREATE
+            exampleArray[0] = "Peter";                          // You can't add a new element to an array, because of the fixed size! (see variable name)
+            myList.add("Peter");
 
-        // SORT
-        Collections.sort(myArray);                              // SORT ASC
-        Collections.sort(myArray, Collections.reverseOrder());  // SORT DESC
-        Collections.reverse(myArray);                           // Reverse order of Array
+            // UPDATE
+            myArray[0] = "Julia";
+            myList.set(0, "Julia");
 
-        // DELETE
-        myArray.clear();
+            // ITERATION BY INDEX
+            for (int i = 0; i < myArray.length; i++) {          // For List: myList.size()
+                System.out.println(myArray[i]);
+                System.out.println(myList.get(i));
+            }
 
+            // ITERATION BY ELEMENT                             // same for lists
+            for (String name: myArray) {
+                System.out.println(name);
+            }
 
-        /* NORMAL ARRAYS
-        Normal Arrays have some minor advantages in some areas (ie. performance) but also have some 
-        drawbacks (fixed size and missing utility), which is why i will only show them in short. */
+            // SORT
+            Arrays.sort(myArray);                              // ASC, sort(myArray, Collections.reverseOrder()) for DESC
+            Collections.sort(myList);                          // ASC, sort(myList, Collections.reverseOrder()) for DESC
 
-        // INITIALIZATION
-        String[] oldArr = {"Dieter", "Maier"};
+            // REVERSE
+            Collections.reverse(Arrays.asList(myArray));        // reversing the order
+            Collections.reverse(myList);
 
-        // CREATE (Impossible to create new Elements because of fixed size)
+            // DELETE element
+            myArray[0] = null;                                  // can't remove cause fixed size!
+            myList.remove(0);
 
-        // READ
-        System.out.println(oldArr[0]);                      // Prints Element by index
-        System.out.println(Arrays.toString(oldArr));        // Prints complete Array
-
-        // UPDATE
-        oldArr[0] = "Peter";                                // Update ELement by Index
-
-        // ITERATE
-        for (int i = 0; i < oldArr.length; i++) {           // Iterate by Index
-            System.out.println(oldArr[i]);
-        }
-
-        for (String name: oldArr) {                         // Iterate by Element
-            System.out.println(name);
-        }
-
-        // SORT (Reversing probably not possible, only with Loop)
-        Arrays.sort(oldArr);                                // SORT ASC
-        Arrays.sort(oldArr, Collections.reverseOrder());    // SORT DESC
-
-        // DELETE (impossible to delete single Elements cause of fixed size)
-        oldArr = null;                                      // Removes everything
+            // DELETE all
+            myArray = null;
+            myList.clear();
     }
 }
