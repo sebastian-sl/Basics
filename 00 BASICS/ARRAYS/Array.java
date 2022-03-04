@@ -51,8 +51,8 @@ public class Array {
             Collections.reverse(myList);
 
             // DELETE element
-            myArray[0] = null;                                  // can't remove cause fixed size!
-            myList.remove(0);
+            myArray[0] = null;                                  // can't remove cause fixed size
+            myList.remove(0);                                   // works for index as well as value
 
             // DELETE all
             myArray = null;                                     // can't completly delete an array
