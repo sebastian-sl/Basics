@@ -14,7 +14,7 @@ x = mystring.substring(-4, -2)                                  // backwards, ev
 mystring1 = mystring1.replace("k", "kay")                       // replaces first with second argument (need to create new string because strings are immutable)
 
 mystring = mystring.toUpperCase()                               // all uppercase, mystring.toLowerCase() for lowercase
-mystring = mystring[0].toUpperCase() + mystring.substring(1)    // capitalizing (no built-in method
+mystring = mystring[0].toUpperCase() + mystring.substring(1)    // capitalizing (no built-in method)
 
 mystring = mystring.trim()                                      // removes leading and trailing whitespaces
 
