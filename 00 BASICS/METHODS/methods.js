@@ -1,7 +1,3 @@
-mystring = "testString"
-myint = 5
-myarray = [5, 6, 7]
-
 // BASIC FUNCTIONS
 function myfunction1() {                // myfunction1() to execute
     return "Hello World"
