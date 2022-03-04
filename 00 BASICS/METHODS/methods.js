@@ -1,29 +1,28 @@
-// Methods
 mystring = "testString"
 myint = 5
 myarray = [5, 6, 7]
 
-// FUNCTIONS
-function myfunction1() {                // Basic function, can be executed with myfunction1()
+// BASIC FUNCTIONS
+function myfunction1() {                // myfunction1() to execute
     return "Hello World"
 }
 
-function myfunction2(number=1) {       // with an argument, equal means default value if no argument given
+// FUNCTIONS WITH ARGUMENT
+function myfunction2(number=1) {       // equal means default value when none is given
     return number * number
 }
 
-function myfunction3(...numbers) {      // with as many arguments as we want, need to iterate over the results
+// FUNCTIONS WITH UNLIMITED ARGUMENTS
+function myfunction3(...numbers) {      // need to iterate over the arguments
     for (let num of numbers) {
         console.log(num)
     }
 }
 
-function myfunction4({id, num}) {       // with key value pairs as arguments
-    console.log(id, num)                // example: myfunction4({id: 1, num: 5})
+// FUNCTIONS WITH KEY-VALUE PAIRS
+function myfunction4({id, num}) {
+    console.log(id, num)
 }
 
-// BUILT IN METHODS
-func = (a, b) => a * b;                     // arrow/anonymous function
-
-myarray1 = myarray.map(myfunction2)         // maps a function to an iterable
-myarray1 = myarray.map((num) => num * num)  // arrow and mapping together
+// ARROW FUNCTIONS
+myarray1 = myarray.map((num) => num * num)  
