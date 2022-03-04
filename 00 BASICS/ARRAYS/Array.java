@@ -1,7 +1,9 @@
-/*  Since Java (in contrast to Python/JS) differentiates between lists and array, i will show both ways (Array first, then List).
-    The main differences between arrays are:
-            -> Arrays have fixed size and are therefor better performance wise
-            -> Lists are more flexible and have bit more utility                */
+/*  
+Since Java (in contrast to Python/JS) differentiates between lists and array, i will show both ways (Array first, then List).
+The main differences between arrays are:
+    -> Arrays have fixed size and are therefore better performance wise
+    -> Lists are more flexible and have bit more utility                
+*/
 import java.util.*;
 
 public class Array {
@@ -16,7 +18,7 @@ public class Array {
             List<String> myList = new ArrayList<>(Arrays.asList("Tim", "Tom", "Zoe"));
 
             // READ ALL
-            System.out.println(Arrays.toString(myArray));       // for whole array
+            System.out.println(Arrays.toString(myArray));
             System.out.println(myList);
 
             // READ element
