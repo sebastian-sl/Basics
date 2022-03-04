@@ -28,23 +28,11 @@ class Engineer:
 print(Engineer.company)                    # CLASS attr
 Engineer.intro()                           # CLASS method
 
-
-# ENUM example
-from enum import Enum
-class department(Enum):                    # set of symbolic names bound to unqiue/constant values
-    HR = 1
-    FINANCE = 2
-    MARKETING = 3
-
-
 # INHHERITANCE example
 class HR_Employee(Employee):                        # Without init, subclass inherits the init from parents! Super() 'manually'
     def __init__(self, fname, lname, division):     # inherits for given arguments. We do this to add another attr!
         super().__init__(fname, lname)
         self.division = division
 
-    department = department.HR                      # class attr for subclass with Enum
-
 obj1 = HR_Employee("Zoe", "Miller", "Hiring")       # creating SUBCLASS INSTANCE
-print(obj1.department)                              # SUBCLASS attr
 obj1.intro()                                        # PARENTS INSTANCE method
