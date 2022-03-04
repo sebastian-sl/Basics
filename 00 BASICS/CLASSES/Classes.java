@@ -1,20 +1,19 @@
-// INSTANCE example (can only be accessed with an instance/object)
+// INSTANCE example
 class Employee {
-    String fname, lname;                                // INSTANCE attr declaration
+    String fname, lname;                                    // INSTANCE attr declaration
 
-
-    Employee(String fname, String lname) {              // INSTANCE attr
+    Employee(String fname, String lname) {                  // INSTANCE attr
         this.fname = fname;
         this.lname = lname;
     }
 
-    void intro() {                                      // INSTANCE method
-        System.out.println("Hello, i am " + this.fname + " " + this.lname);
+    void intro() {                                          // INSTANCE method
+        System.out.println("Hello, i am " + this.lname);
     }
 }
 
 
-// CLASS example (can be accessed by class without instance)
+// CLASS example
 class Engineer {
     static String company = "testcompany";              // CLASS attr
 
@@ -27,15 +26,8 @@ class Engineer {
     }
 }
 
-
-// ENUM
-enum Department {                                               // set of symbolic names bound to unqiue/constant values
-    HR, FINANCE, MARKETING
-}
-
 // INHERITANCE
 class HREmployee extends Employee {
-    Department department = Department.HR;                      // CLASS attr from ENUM
     String division;
 
     HREmployee(String fname, String lname, String division) {  // SUBCLASS inherits attr from parent
@@ -60,7 +52,6 @@ public class Classes {
 
         // INHERITANCE
         HREmployee hr = new HREmployee("Zoe", "Miller", "Hiring");  // creating INSTANCE SUBCLASS
-        System.out.println(hr.department);                          // calling SUBCLASS attr (ENUM)
-        hr.intro();                                                 // calling INHERITED method
+        hr.intro();                                                 // calling parents INHERITED method
     }
 }
