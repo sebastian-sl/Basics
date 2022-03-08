@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "first_name": "Kylian",
+        "last_name": "Mbappe",
+        "age": 23,
+        "value": 160000000
+    },
+    {
+        "id": 2,
+        "first_name": "Erling",
+        "last_name": "Haaland",
+        "age": 21,
+        "value": 150000000
+    },
+    {
+        "id": 3,
+        "first_name": "Vinicius",
+        "last_name": "Junior",
+        "age": 21,
+        "value": 100000000
+    },
+    {
+        "id": 4,
+        "first_name": "Mohamed",
+        "last_name": "Salah",
+        "age": 29,
+        "value": 100000000
+    },
+    {
+        "id": 5,
+        "first_name": "Harry",
+        "last_name": "Kane",
+        "age": 28,
+        "value": 100000000
+    }
+]
