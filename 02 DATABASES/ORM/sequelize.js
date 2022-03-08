@@ -6,7 +6,7 @@ const sequelize = new Sequelize({
     port: 5433,
     dialect: "postgres",
     username: "postgres",
-    password: "runaller",
+    password: "test",
     database: "mytest",
     logging: false                                                                  // otherwise every query will be logged (and probably not executed)
 })
