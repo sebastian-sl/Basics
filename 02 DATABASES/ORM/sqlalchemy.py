@@ -38,7 +38,7 @@ Ben.id = 99
 # Delete User
 s.query(User).filter(User.id == 22).delete()
 
-# s.commit()
+s.commit()
 
 
 # RAW SQL
