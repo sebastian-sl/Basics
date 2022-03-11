@@ -1,7 +1,7 @@
 ﻿id;first_name;last_name;age;value;
-1;Kylian;Mbappe;23;160.000.000;
+1;Kylian;Mbappe;23;160000000;
 2;Erling;Haaland;21;150000000;
-3;Vinicius;Junior;21;1000000000;
+3;Vinicius;Junior;21;100000000;
 4;Mohamed;Salah;29;100000000;
 5;Harry;Kane;28;100000000;
 6;Romelu;Lukaku;28;100000000;
