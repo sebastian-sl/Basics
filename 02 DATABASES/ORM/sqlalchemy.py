@@ -43,7 +43,7 @@ s.commit()
 
 # RAW SQL
 engine_mysql = db.create_engine(f"mysql://root:root@localhost:3306/db")
-engine_postgres = db.create_engine("postgresql://postgres:runaller@localhost:5433/mytest")
+engine_postgres = db.create_engine("postgresql://postgres:test@localhost:5433/mytest")
 engine_mssql = db.create_engine("mssql+pyodbc://localhost/testdb?driver=SQL+Server+Native+Client+11.0")
 
 engine_mysql.execute("SELECT * FROM users")
