@@ -1,6 +1,6 @@
 # Basics
 
-This repository will serve as a Cheat Sheet or Storage of Basic Code for my most used Programming Languages (Java, Python, Javascript) and other important things aswell (GIT, HTML, CSS etc.). So i can come back to this public repo everytime i need to look for some code snippet or see how certain Frameworks work.  
+This repository will serve as a Cheat Sheet or storage of Code Snippets for my most used Programming Languages (Java, Python, Javascript) and other important things aswell (GIT, HTML, CSS etc.). So i can come back to this public repo everytime i need to look for some code snippet or see how certain Frameworks work.  
 
 &nbsp;
 
