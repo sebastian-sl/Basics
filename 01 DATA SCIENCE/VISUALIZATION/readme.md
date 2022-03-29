@@ -1,6 +1,6 @@
 # Data Visualization
 
-There are multiple visualization libararies which each have their advantages and disadvantages. I will describe the three, at least in my opinion, most useful visualization libraries. It's never a bad idea to at least learn the basics of each one, because some work better for certain charts (for example heatmaps) while other work better for other chart types.
+There are multiple visualization libararies which each have their advantages and disadvantages. I will only describe the two, for me most used visualization librarires (plotly and seaborn). There are quite more, for example matplotlib/ggplot/bokeh, but i think its best to get used to one or maybe two and learn the details of these ones instead of trying to learn all.
 
 <br>
 
@@ -12,10 +12,7 @@ My favorite visualization library. It has a relatively easy syntax in comparison
 
 * **Plotly Express** Quick chart-generating Libary. Offers a preset of charts from graph objects with an easier syntax and easier connection with dataframes.
 
-## 2) Matplotlib
+## 2) Matplotlib / Seaborn
 
-The 'standard' way of creating plots, often described as the go-to Libary. Matplotlib offers many functions for customizing charts.
-
-## 3) Seaborn
-
-Another visualization library which can be used for a variety of beautiful plots. Has some nice built-in plots which other libraries don't offer out of the box (like heatmaps). Works well with dataframes too.
+Here we will use a combination of matplotlib and seaborn. Seaborn is a library built on matplotlib which enables nice built-in plots with a way easier usage for DataFrames in terms of syntax. In Addition we will use matplotlib for certain charts that aren't
+available in seaborn. Using matplotlib only is also a possiblity, but the difficulty to create nice charts is quite high.
