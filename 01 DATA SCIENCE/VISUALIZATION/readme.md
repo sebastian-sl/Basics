@@ -6,11 +6,7 @@ There are multiple visualization libararies which each have their advantages and
 
 ## 1) Plotly
 
-My favorite visualization library. It has a relatively easy syntax in comparison to the others and is suitable for setting up charts quick. A big advantage is that you are able to create interactive charts out of the box with sliders, zooming ability and hover options. There are two ways to use plotly:  
-
-* **Graph Objects** Standard way. In comparison to Plotly express the syntax is bit heavier and longer. Ideally if you want to built highly customized charts.
-
-* **Plotly Express** Quick chart-generating Libary. Offers a preset of charts from graph objects with an easier syntax and easier connection with dataframes.
+My favorite visualization library. It has a relatively easy syntax in comparison to the others and is suitable for setting up charts quick. A big advantage is that you are able to create interactive charts out of the box with sliders, zooming ability and hover options. There are two ways to use plotly: via Graph Objects or via Plotly Express. The official documentation recommends using plotly express whenever you can, because you can create a graph in 1 line of code instead of 5-100 lines. Personally, i would recommend Graph Objects only if you need a highly customized chart that isnt possible in express.
 
 ## 2) Matplotlib / Seaborn
 
