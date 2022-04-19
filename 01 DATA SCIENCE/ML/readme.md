@@ -5,6 +5,7 @@ Supervised Learning means we give the algorithm a training dataset which contain
 We use regression when we want to build a model that predicts __numeric outcomes__. For example: sales or attendance predictions.  
 
 * Linear Regression
+* Polynomial Regression
 * Decision Trees
 * Random Forests
 * Neural Networks
