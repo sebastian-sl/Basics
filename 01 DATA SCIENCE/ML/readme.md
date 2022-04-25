@@ -6,8 +6,7 @@ We use regression when we want to build a model that predicts __numeric outcomes
 
 * Linear Regression
 * Polynomial Regression
-* Decision Trees
-* Random Forests
+* Decision Trees / Random Forests
 * Neural Networks
 
 ### 1.2) Classification
