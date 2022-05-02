@@ -1,8 +1,8 @@
 ## 1) Supervised Learning
-Supervised Learning means we give the algorithm a training dataset which contains multiple variables __and the corrensponding outcomes__. With that training data the algorithm tries to build a mathematical equation that fits the best, aka can reproduce the outcomes the best. With that model we can input new variables and it will predict new outcomes.
+Supervised Learning means we give the algorithm a training dataset which contains multiple variables __and the corrensponding outcomes__. With that training data the algorithm tries to build a mathematical equation that fits the best, aka can reproduce the outcomes. With that model we can input new variables and it will use the built equation to predict new outcomes.
 
 ### 1.1) Regression
-We use regression when we want to build a model that predicts __numeric outcomes__. For example: sales or attendance predictions.  
+We use regression when we want to build a model that predicts __numeric outcomes__. For example: sales predictions or attendance predictions.  
 
 * Linear Regression
 * Polynomial Regression
@@ -10,7 +10,7 @@ We use regression when we want to build a model that predicts __numeric outcomes
 * Neural Networks
 
 ### 1.2) Classification
-Classification means that we want to predict a result, that has two outcomes __True/False__. Some examples would be Students passing a Test or Image detection.
+Classification means that we want to predict a result, that has two outcomes __True/False__. Some examples would be Image Detection or if a Student passes a Test or not.
 
 * Logistic Regression
 * Random Forests
