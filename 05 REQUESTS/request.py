@@ -14,7 +14,7 @@ for user in users:                                                      # iterat
     print(user["id"], user["name"])
 
 
-# WEB SCRAPING (not really recommended, because of multiple things like security, cookies, javascript, better use an api and above method)
+# WEB SCRAPING (not really recommended, because of multiple things like security, cookies, javascript, better use an api)
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"}
 URL = "https://www.amazon.de/fire-hd-10-plus/dp/B08F682ZHL"
 
