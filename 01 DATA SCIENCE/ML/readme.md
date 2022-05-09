@@ -13,7 +13,7 @@ We use regression when we want to build a model that predicts __numeric outcomes
 Classification means that we want to predict a result, that has two outcomes __True/False__. Some examples would be Image Detection or if a Student passes a Test or not.
 
 * Logistic Regression
-* Random Forests
+* Decision Trees / Random Forests
 * SVM
 * Naive Bayes
 * Neural Networks
