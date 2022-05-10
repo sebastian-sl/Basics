@@ -4,16 +4,16 @@ Supervised Learning means we give the algorithm a training dataset which contain
 ### 1.1) [Regression](https://github.com/sebastian-sl/Basics/blob/main/01%20DATA%20SCIENCE/ML/SKLEARN/1.1%20Supervised%20-%20Regression.ipynb)
 We use regression when we want to build a model that predicts __numeric outcomes__. For example: sales predictions or attendance predictions.  
 
-* Linear Regression
-* Polynomial Regression
-* Decision Trees / Random Forests
+* __Linear Regression__
+* __Polynomial Regression__
+* __Decision Trees / Random Forests__
 * Neural Networks
 
 ### 1.2) [Classification](https://github.com/sebastian-sl/Basics/blob/main/01%20DATA%20SCIENCE/ML/SKLEARN/1.2%20Supervised%20-%20Classification.ipynb)
 Classification means that we want to predict a result, that has two outcomes __True/False__. Some examples would be Image Detection or if a Student passes a Test or not.
 
-* Logistic Regression
-* Decision Trees / Random Forests
+* __Logistic Regression__
+* __Decision Trees / Random Forests__
 * SVM
 * Naive Bayes
 * Neural Networks
