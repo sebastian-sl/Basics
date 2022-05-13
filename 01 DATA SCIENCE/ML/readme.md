@@ -16,7 +16,7 @@ Classification means that we want to predict a result, that has two outcomes __T
 
 * __Logistic Regression__
 * __Decision Trees / Random Forests__
-* SVM
+* __SVM__
 * Naive Bayes
 * Neural Networks
 
