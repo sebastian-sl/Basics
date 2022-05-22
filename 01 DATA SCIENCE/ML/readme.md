@@ -17,7 +17,7 @@ Classification means that we want to predict a result, that has two outcomes __T
 * __Logistic Regression__
 * __Decision Trees / Random Forests__
 * __SVM__
-* Naive Bayes
+* __Naive Bayes__
 * Neural Networks
 
 [[Sklearn]](https://github.com/sebastian-sl/Basics/blob/main/01%20DATA%20SCIENCE/ML/SKLEARN/1_2_Supervised_Classification.ipynb)
