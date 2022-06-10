@@ -25,6 +25,6 @@ Classification is a method to assign objects into different __preset classes (ca
 ## 2) Unsupervised Learning - Clustering
 Unsupervised learning means we give the model a training dataset with objects which __doesn't contain the corresponding classes (outcomes)__. Instead we try to build a model which clusters/groups the objects together that seem to fit together depending on their object variables. If we want to enter a new object with variables, we can see which corresponding cluster it belongs and which objects are similiar to it. Examples: User/Buyer behaviour, Player performance in sports
 
-* k-means
+* __k-means__
 * k-nearest Neighbors
 * PCA
