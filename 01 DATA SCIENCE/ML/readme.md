@@ -18,6 +18,7 @@ Classification is a method to assign objects into different __preset classes (ca
 * __Decision Trees / Random Forests__
 * __SVM__
 * __Naive Bayes__
+* __k-nearest Neighbors__
 * Neural Networks
 
 [[Sklearn]](https://github.com/sebastian-sl/Basics/blob/main/01%20DATA%20SCIENCE/ML/SKLEARN/1_2_Supervised_Classification.ipynb)
@@ -26,5 +27,4 @@ Classification is a method to assign objects into different __preset classes (ca
 Unsupervised learning means we give the model a training dataset with objects which __doesn't contain the corresponding classes (outcomes)__. Instead we try to build a model which clusters/groups the objects together that seem to fit together depending on their object variables. If we want to enter a new object with variables, we can see which corresponding cluster it belongs and which objects are similiar to it. Examples: User/Buyer behaviour, Player performance in sports
 
 * __k-means__
-* k-nearest Neighbors
 * PCA
