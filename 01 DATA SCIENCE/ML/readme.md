@@ -28,3 +28,5 @@ Unsupervised learning means we give the model a training dataset with objects wh
 
 * __k-means__
 * PCA
+
+[[Sklearn]](https://github.com/sebastian-sl/Basics/blob/main/01%20DATA%20SCIENCE/ML/SKLEARN/2_Unsupervised_Clustering.ipynb)
