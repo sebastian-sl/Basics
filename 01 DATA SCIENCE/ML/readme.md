@@ -12,7 +12,7 @@ Regression analysis is statistical method to predict __numerical outcomes__. Exa
 [[Sklearn]](https://github.com/sebastian-sl/Basics/blob/main/01%20DATA%20SCIENCE/ML/SKLEARN/1_1_Supervised_Regression.ipynb)
 
 ### 1.2) Classification
-Classification is a method to assign objects into different __preset classes (can just be True/False)__. Examples: Spam Filter, Image Detection, Predicting binary results (tests)
+Classification is a method to assign objects into different __preset classes__ (can just be True/False or multiple classes). Examples: Spam Filter, Image Detection, Predicting binary results (tests)
 
 * __Logistic Regression__
 * __Decision Trees / Random Forests__
