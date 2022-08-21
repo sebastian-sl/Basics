@@ -8,23 +8,23 @@ public class Array {
   public static void main(String[] args) {
 
             // DECLARATION
-            String[] exampleArray = new String[3];                  // need to give size of array
+            String[] exampleArray = new String[3];                  // needs a fixed size
             List<String> exampleList = new ArrayList<>();
 
             // INITIALIZE
             String[] myArray = {"Tim", "Tom", "Zoe"};
             List<String> myList = new ArrayList<>(Arrays.asList("Tim", "Tom", "Zoe"));
 
-            // READ all
-            System.out.println(Arrays.toString(myArray));
+            // READ all (Print)
+            System.out.println(Arrays.toString(myArray));           
             System.out.println(myList);
 
-            // READ element
+            // READ element (Print)
             System.out.println(myArray[0]);
             System.out.println(myList.get(0));
 
             // CREATE
-            exampleArray[0] = "Peter";                          // can't add new items to an array
+            exampleArray[0] = "Peter";                          // can't add new items to an array, only change values
             myList.add("Peter");
 
             // UPDATE
