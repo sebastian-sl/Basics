@@ -2,15 +2,15 @@
 myArray = ["Tim", "Julia", "Hans"];
 
 // READ
-console.log(myArray);                           // complete Array
-console.log(myArray[1])                         // elements
+console.log(myArray);                           // prints complete Array
+console.log(myArray[1])                         // prints one element of the array
 
 // CREATE
 myArray.push("Lola");                           // Append to the end of the Array
 myArray.splice(1, 0, "Peter");                  // Insert into (Position, Delete Count, Element)
 
 // UPDATE
-myArray[0] = "Zoe"                              // Updates Element by Index
+myArray[0] = "Zoe"                              // Updates Value of Element by Index
 
 // ITERATATION BY INDEX
 for (let i = 0; i < myArray.length; i++) {      // Iterate by index
