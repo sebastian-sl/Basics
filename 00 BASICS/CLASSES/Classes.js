@@ -25,6 +25,7 @@ class Engineer {
 console.log(Engineer.company)          // CLASS attr
 Engineer.intro()                       // CLASS method
 
+
 // INHERITANCE example
 class HREmployee extends Employee {
     constructor(fname, lname, division) {
