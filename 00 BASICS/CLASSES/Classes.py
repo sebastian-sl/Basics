@@ -7,11 +7,9 @@ class Employee:
     def intro(self):
         print(f"Hello, i am {self.fname} {self.lname}!")
 
-
 obj = Employee("Peter", "Mayer")            # creating INSTANCE
 print(obj.fname)                            # INSTANCE attr (changeable with obj.fname = ?)
 obj.intro()                                 # INSTANCE method
-
 
 # CLASSES example
 class Engineer:
