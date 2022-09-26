@@ -9,10 +9,10 @@ def main():
 
 
 # return Json Object
-@app.route("/api/<id>", methods=["GET"])
-def api(id):
+@app.route("/<parameter>", methods=["GET"])
+def api(parameter):
     return jsonify({
-        "id": 1,
+        "Parameter": parameter,
         "name": "Example",
         "Adress": "Street 1",
         "City": "Chicago",
