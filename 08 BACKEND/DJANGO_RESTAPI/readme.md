@@ -15,9 +15,9 @@
 
 ### Creating the API
 
-* edit App view [LINK](https://github.com/sebastian-sl/Basics/blob/main/08%20BACKEND/DJANGO_RESTAPI/api/views.py)
-* create App urls [LINK](https://github.com/sebastian-sl/Basics/blob/main/08%20BACKEND/DJANGO_RESTAPI/api/urls.py)
-* edit Project urls [LINK](https://github.com/sebastian-sl/Basics/blob/main/08%20BACKEND/DJANGO_RESTAPI/DJANGO_RESTAPI/urls.py)
+* edit App view with api_view and response [LINK](https://github.com/sebastian-sl/Basics/blob/main/08%20BACKEND/DJANGO_RESTAPI/api/views.py)
+* create App urls with imported views and path [LINK](https://github.com/sebastian-sl/Basics/blob/main/08%20BACKEND/DJANGO_RESTAPI/api/urls.py)
+* edit Project urls with included app.urls [LINK](https://github.com/sebastian-sl/Basics/blob/main/08%20BACKEND/DJANGO_RESTAPI/DJANGO_RESTAPI/urls.py)
 
 ### Run Server
 
