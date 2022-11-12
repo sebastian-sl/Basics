@@ -13,7 +13,7 @@ The repository will be divided by topics and will probably contain the nine foll
 * **[04 File Management:](https://github.com/sebastian-sl/Basics/tree/main/04%20FILE%20MANAGEMENT)** Basic CRUD Operations for .txt/.csv
 * **[05 Requests:](https://github.com/sebastian-sl/Basics/tree/main/05%20REQUESTS)** Basic API calls and Webscraping
 * **[06 GIT](https://github.com/sebastian-sl/Basics/tree/main/06%20GIT)**
-* **[07 Frontend:*](https://github.com/sebastian-sl/Basics/tree/main/07%20FRONTEND)* HTML, CSS + Frameworks, Javascript + Frameworks
+* **[07 Frontend:](https://github.com/sebastian-sl/Basics/tree/main/07%20FRONTEND)** HTML, CSS + Frameworks, Javascript + Frameworks
 * **[08 Backend:](https://github.com/sebastian-sl/Basics/tree/main/08%20BACKEND)** Django, Flask, Spring, Express
 * **[09 Others](https://github.com/sebastian-sl/Basics/tree/main/09%20OTHERS)**  Python Venv
 
