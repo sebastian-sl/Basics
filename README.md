@@ -16,7 +16,3 @@ The repository will be divided by topics and will probably contain the nine foll
 * **[07 Frontend:](https://github.com/sebastian-sl/Basics/tree/main/07%20FRONTEND)** HTML, CSS + Frameworks, Javascript + Frameworks
 * **[08 Backend:](https://github.com/sebastian-sl/Basics/tree/main/08%20BACKEND)** Django, Flask, Spring, Express
 * **[09 Others](https://github.com/sebastian-sl/Basics/tree/main/09%20OTHERS)**  Python Venv
-
-&nbsp;
-
-*This repository won't be perfect, since i'm not an expert but i will try to maintain best practices and modern code*
